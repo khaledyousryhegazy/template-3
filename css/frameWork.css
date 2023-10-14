@@ -1,0 +1,106 @@
+/* ======================================== MY FRAMEWORK "ALL I USE" ========================================*/
+.c-f {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-f-x {
+  display: flex;
+  justify-content: center;
+}
+.c-f-y {
+  display: flex;
+  align-items: center;
+}
+.space-up-down-section {
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+.p-u-d-60 {
+  padding: 60px 0;
+}
+.center-position {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-title {
+  margin: 60px auto 0;
+  width: fit-content;
+  padding: 16px 30px;
+  border: 2px solid var(--dark);
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  cursor: default;
+  z-index: 100;
+  text-transform: uppercase;
+}
+.main-title::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--main-color);
+  position: absolute;
+  left: -40px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.main-title::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--main-color);
+  position: absolute;
+  right: -40px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.main-title:hover {
+  color: var(--light);
+  border-color: var(--light);
+  transition-delay: 0.5s;
+}
+.main-title:hover::before {
+  animation: before 0.5s linear forwards;
+}
+.main-title:hover::after {
+  animation: after 0.5s linear forwards;
+}
+.arrow {
+  font-size: 12px;
+  margin: 9px 0 60px;
+}
+.arrow > a {
+  color: var(--main-color);
+  display: block;
+  font-weight: 900;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 65px;
+}
+.arrow > a > i {
+  animation: arrowUpDown 2s linear infinite;
+}
+.g-p {
+  display: grid;
+  place-items: center;
+}
+.g-t-c {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}

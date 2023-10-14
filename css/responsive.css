@@ -1,0 +1,184 @@
+/* global */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px !important;
+  }
+}
+/* end global */
+/* start header */
+@media (max-width: 767px) {
+  .header .container {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90px;
+  }
+  .header .container > .main-links > ul > li > a {
+    padding: 0 15px;
+    height: 50px;
+  }
+}
+@media (max-width: 414px) {
+  .header .container > .main-links > ul > li > a {
+    padding: 0 10px;
+    font-size: 15px;
+  }
+}
+/* end header */
+/* start landing */
+@media (max-width: 1200px) {
+  .landing .container > .right > img {
+    width: 500px;
+  }
+}
+@media (max-width: 991px) {
+  .landing .container {
+    flex-direction: column;
+  }
+  .landing .container > .left {
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+  }
+}
+@media (max-width: 767px) {
+  .landing .container {
+    height: calc(100vh - 200px);
+  }
+  .landing {
+    height: 100vh;
+  }
+  .landing .container > .left > h2 {
+    font-size: 25px;
+  }
+  .landing .container > .left > p {
+    font-size: 15px;
+  }
+  .landing .container > .right > img {
+    width: 300px;
+  }
+}
+/* end landing */
+/* mega menu */
+@media (max-width: 991px) {
+  .header .mega-menu > div {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .mega-menu {
+    flex-direction: column;
+    gap: 0;
+    padding: 5px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .header .mega-menu .links:first-of-type li:last-child {
+    border-bottom: 1px solid #e9e6e6;
+  }
+}
+/* end mega-menu */
+/* start arrow */
+@media (max-width: 767px) {
+  .arrow > a {
+    top: -150px !important;
+  }
+}
+/* end arrow */
+/* start articles */
+@media (max-width: 576px) {
+  .articles .container {
+    padding: 25px;
+  }
+}
+/* end articles */
+/* start team-member */
+@media (max-width: 768px) {
+  .team-member > .main-title {
+    padding: 16px 40px !important;
+  }
+  .team-member .container {
+    padding: 30px;
+  }
+}
+/* end team member */
+/* start our skills */
+@media (max-width: 992px) {
+  .our-skills .container {
+    width: 100%;
+  }
+  .our-skills .container .left {
+    display: none;
+  }
+  .our-skills .container .right {
+    width: 100% !important;
+  }
+}
+/* end our skills */
+/* start how it work */
+@media (max-width: 992px) {
+  .how-it-work .container > .content {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  .how-it-work .container > {
+    justify-content: center;
+  }
+  .how-it-work .container .img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* end how it work */
+/* start latest events */
+@media (max-width: 768px) {
+  .latest-events .container .up .left img {
+    max-width: 280px;
+  }
+  .latest-events .container .up {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 0 !important;
+    margin-top: 30px;
+  }
+  .latest-events .container {
+    padding: 0 !important;
+  }
+  .latest-events .container .up .right .text {
+    width: 300px;
+  }
+  .latest-events .container .up .right .text h3 {
+    font-size: 20px;
+  }
+  .latest-events .container .up .right .text p {
+    font-size: 14px;
+  }
+  .latest-events .container .down .input {
+    max-width: 320px;
+  }
+  .latest-events .container .down .input input {
+    max-width: 200px;
+  }
+}
+/* end latest events */
+/* start top video */
+@media (max-width: 992px) {
+  .top-video .container {
+    flex-wrap: wrap !important;
+  }
+  .top-video .container .left,
+  .top-video .container .left ul li {
+    width: 100% !important;
+  }
+}
+/* end top video */
+/* start discount */
+@media (max-width: 768px) {
+  .discount .parent {
+    flex-direction: column;
+  }
+  .discount .parent .left,
+  .discount .parent .right {
+    width: 100% !important;
+  }
+}
